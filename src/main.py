@@ -6,9 +6,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # importing command classes
 from commands.misc import Misc
-
-# importing event classes
-from events.messages import MessageEvents
+from commands.math import Math
+from commands.interaction import Interaction
 
 dotenv_path = Path(__file__).parent.parent / ".env"
 
@@ -19,7 +18,9 @@ class PypeBot:
         
         # command registering
         Misc(self.app)
-    
+        Math(self.app)
+        Interaction(self.app)
+
     async def start(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await update.message.reply_text("Tamo' activo B)")
 

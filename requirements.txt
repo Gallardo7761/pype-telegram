@@ -1,0 +1,4 @@
+matplotlib
+telegram
+python-telegram-bot
+numpy

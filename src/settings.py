@@ -10,7 +10,7 @@
 GUILD_NAME = "The Boys" # nombre del servidor
 BOT_OWNER = "Gallardo7761"
 BOT_OWNER_ID = 8068730345
-BOT_LOGO ="resources/images/pype.png" # png/jpg
+BOT_LOGO ="data/images/pype.png" # png/jpg
 BOT_NAME = "Pype" # nombre a elegir
 BOT_LANG = "Python" # lenguaje
 BOT_TYPE = "Multipropósito" # tipo
@@ -18,6 +18,7 @@ BOT_VERSION = "1.0.0" # versión del bot
 LAVALINK_URI = '' # ip del servidor de Lavalink
 LAVALINK_PASSWORD = ''
 TIMEZONE = "Europe/Madrid" # zona horaria
+GRAPH_PATH = "data/images/graph.png" # ruta para guardar gráficos
 
 # Cofiguración de parámetros del comando /help
 INDICE = "ㅤ\n**★) ** 🪶 Varios\n\n**★) ** 👥 Interacción\n\n**★) ** 🧮 Matemáticas\n\n**★) ** 🎶 Música\n\n**★) ** 💻 Asciiart\n\n**★) ** ✅ Verificacion\n\n**★) ** 🆘 Help\n\n*En las siguientes páginas*\n*hay ayuda más detallada.*"

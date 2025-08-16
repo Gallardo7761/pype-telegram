@@ -11,19 +11,19 @@ from matplotlib.patches import Circle
 class Math:
     def __init__(self, app: Application):
         self.app = app
-        app.add_handler(CommandHandler("calcular", self.calc))
+        app.add_handler(CommandHandler("calcular", self.calculate))
         app.add_handler(CommandHandler("par", self.even))
         app.add_handler(CommandHandler("primo", self.prime))
-        app.add_handler(CommandHandler("grafseno", self.grafseno))
-        app.add_handler(CommandHandler("grafcoseno", self.grafcoseno))
-        app.add_handler(CommandHandler("grafrecta", self.grafrecta))
-        app.add_handler(CommandHandler("grafparabola", self.grafparabola))
-        app.add_handler(CommandHandler("grafcircunferencia", self.grafcircunferencia))
-        app.add_handler(CommandHandler("graflog", self.graflog))
-        app.add_handler(CommandHandler("grafexp", self.grafexp))
+        app.add_handler(CommandHandler("seno", self.sine))
+        app.add_handler(CommandHandler("coseno", self.cosine))
+        app.add_handler(CommandHandler("recta", self.rect))
+        app.add_handler(CommandHandler("parabola", self.parable))
+        app.add_handler(CommandHandler("circunferencia", self.circle))
+        app.add_handler(CommandHandler("log", self.log))
+        app.add_handler(CommandHandler("exp", self.exp))
 
     @delete_user_message
-    async def calc(self, update:Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    async def calculate(self, update:Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         if not context.args:
             await update.effective_chat.send_message(
                 text="Debes especificar una expresión matemática",
@@ -79,7 +79,7 @@ class Math:
         plt.clf()
 
     @delete_user_message
-    async def grafseno(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    async def sine(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         if len(context.args) < 2:
             await update.effective_chat.send_message("Debes dar a y k: /grafseno a k")
             return
@@ -92,7 +92,7 @@ class Math:
         await self.send_graph(update)
 
     @delete_user_message
-    async def grafcoseno(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    async def cosine(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         if len(context.args) < 2:
             await update.effective_chat.send_message("Debes dar a y k: /grafcoseno a k")
             return
@@ -105,7 +105,7 @@ class Math:
         await self.send_graph(update)
 
     @delete_user_message
-    async def grafrecta(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    async def rect(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         if len(context.args) < 2:
             await update.effective_chat.send_message("Debes dar m y n: /grafrecta m n")
             return
@@ -119,7 +119,7 @@ class Math:
         await self.send_graph(update)
 
     @delete_user_message
-    async def grafparabola(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    async def parable(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         if len(context.args) < 3:
             await update.effective_chat.send_message("Debes dar a, b, c: /grafparabola a b c")
             return
@@ -133,7 +133,7 @@ class Math:
         await self.send_graph(update)
 
     @delete_user_message
-    async def grafcircunferencia(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    async def circle(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         if not context.args:
             await update.effective_chat.send_message("Debes dar el radio: /grafcircunferencia r")
             return
@@ -147,7 +147,7 @@ class Math:
         await self.send_graph(update)
 
     @delete_user_message
-    async def graflog(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    async def log(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         if len(context.args) < 2:
             await update.effective_chat.send_message("Debes dar a y b: /graflog a b")
             return
@@ -161,7 +161,7 @@ class Math:
         await self.send_graph(update)
 
     @delete_user_message
-    async def grafexp(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    async def exp(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         if len(context.args) < 2:
             await update.effective_chat.send_message("Debes dar a y b: /grafexp a b")
             return

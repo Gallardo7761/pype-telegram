@@ -21,97 +21,72 @@ TIMEZONE = "Europe/Madrid" # zona horaria
 GRAPH_PATH = "data/images/graph.png" # ruta para guardar gráficos
 
 # Cofiguración de parámetros del comando /help
-INDICE = "ㅤ\n**★) ** 🪶 Varios\n\n**★) ** 👥 Interacción\n\n**★) ** 🧮 Matemáticas\n\n**★) ** 🎶 Música\n\n**★) ** 💻 Asciiart\n\n**★) ** ✅ Verificacion\n\n**★) ** 🆘 Help\n\n*En las siguientes páginas*\n*hay ayuda más detallada.*"
 VARIOS = """
-**/misc ping** - Ping de Pype.
-**/misc info** - Info del discord.
-**/misc say** - Pype dice algo.
-**/misc platano** - Banana!
-**/misc dado** - Tira un dado de 6 caras.
-**/misc moneda** - Tira una moneda al aire.
-**/misc avatar** - Renderiza el avatar de un miembro del servidor.
-**/misc wallpaper** - Wallpaper de anime (PC).
-**/misc mobilewallpaper** - Wallpaper de anime (móvil).
-**/misc paredes** - Están por las paredes.
-**/misc oooh** - Ooooooooh! .- Exclamaron Mordecai y Rigby.
-**/misc carey** - Navidad (?)
-**/misc beber** - Bebe algo.
-**/misc bombardeen** - Bombardeen algo.
+<b>MISCELÁNEA</b>
+**/ping** - Ping de Pype.
+**/info** - Info del discord.
+**/say <cosa>** - Pype dice algo.
+**/platano** - Banana!
+**/dado** - Tira un dado de 6 caras.
+**/moneda** - Tira una moneda al aire.
+**/paredes <usuario>** - Están por las paredes.
+**/oooh** - Ooooooooh! .- Exclamaron Mordecai y Rigby.
+**/beber** - Bebe algo.
+**/bombardeen <cosa>** - Bombardeen algo.
 """
+
 INTERACCION = """
-**/inter wave** - Di hola.
-**/inter dance** - Saca los pasos prohibidos.
-**/inter nice** - Noice.
-**/inter nosebleed** - Ecsitante.
-**/inter punch** - Cruzado o uppercut?
-**/inter feed** - Alimenta a alguien.
-**/inter tickle** - Hazle la tortura de las cosquillas a alguien.
-**/inter bite** - Muerde~ a alguien.
-**/inter hug** - Abraza a alguien.
-**/inter kill** - Mata a alguien D:
-**/inter kiss** - Besa a alguien UwU        
-**/inter pat** - Dale palmaditas a alguien.
-**/inter slap** - A dar de hostias a alguien.
-**/inter sleep** - A mimir.
-**/inter cry** - Tas bien? :(
-**/inter cuddle** - Acurrúcate con alguien u.u
-**/inter lick** - Lame a alguien?
+<b>INTERACCIÓN</b>
+**/waifu** - Te da una waifu aleatoria en GIF.
+**/neko** - Te da un neko aleatorio en GIF.
+**/shinobu** - Te da un GIF de Shinobu.
+**/megumin** - Te da un GIF de Megumin.
+**/bully <usuario>** - Haz bullying a alguien (GIF).
+**/cuddle <usuario>** - Acurrúcate con alguien (GIF).
+**/cry** - Llora con un GIF.
+**/hug <usuario>** - Abraza a alguien (GIF).
+**/awoo** - Pide un GIF de furro.
+**/kiss <usuario>** - Besa a alguien (GIF).
+**/lick <usuario>** - Lame a alguien (GIF).
+**/pat <usuario>** - Acaricia a alguien (GIF).
+**/smug <usuario>** - Presume ante alguien (GIF).
+**/bonk <usuario>** - Da un bonk a alguien (GIF).
+**/yeet <usuario>** - Lanza a alguien (GIF).
+**/blush** - Sonrojarse (GIF).
+**/smile** - Sonríe (GIF).
+**/wave <usuario>** - Saluda a alguien (GIF).
+**/highfive <usuario>** - Choca la mano con alguien (GIF).
+**/handhold <usuario>** - Cógela mano a mano con alguien (GIF).
+**/nom** - Come algo rico (GIF).
+**/bite <usuario>** - Muérdele a alguien (GIF).
+**/glomp <usuario>** - Abalánzate sobre alguien (GIF).
+**/slap <usuario>** - Da una bofetada a alguien (GIF).
+**/kill <usuario>** - Mata a alguien (GIF).
+**/kick <usuario>** - Patea a alguien (GIF).
+**/happy** - Estás feliz (GIF).
+**/wink <usuario>** - Guiña el ojo a alguien (GIF).
+**/poke <usuario>** - Molesta a alguien (GIF).
+**/dance <usuario>** - Baila (GIF).
+**/cringe <usuario>** - Da cringe lo que hizo alguien (GIF).
+**/run** - Huyes (GIF local).
+**/fbi <usuario>** - Llama al FBI para alguien (GIF local).
+**/spank <usuario>** - Da una nalgada a alguien (GIF local).
+**/ship <usuario1> <usuario2>** - Comprueba compatibilidad entre dos personas (GIF local).
+**/moan** - Gemido (GIF local).
+**/femboize <usuario>** - Convierte a alguien en femboy (PNG local).
 """
-INTERACCION_2 = """
-**/inter threaten** - Amenaza a alguien >:)
-**/inter run** - Corre Forrest, corre!
-**/inter fbi** - FBI OPEN UP!
-**/inter spank** - Dale nalgadas a alguien.
-**/inter ship** - Haz un ship entre dos personas.
-**/inter moan** - Aaaaaaah~!
-**/femboy** - Femboiza a alguien.
-"""
-NSFW = """
-**/nsfw creampie** Lechita.
-**/nsfw hentai** Go to horny jail.
-**/nsfw anal** Es la hora de dar por culo.
-**/nsfw ass** Culito, culito!
-**/nsfw bdsm** Atar?
-**/nsfw doujin** Página random de un doujinshi.
-**/nsfw fap** Fap fap fap fap.
-**/nsfw ero** Fucking pervert.
-**/nsfw yuri** Imagen yuri 🏳️‍🌈.
-**/nsfw blowjob** * clk clk clk *
-**/nsfw boobs** Tetas tetitas tetazas tetotas tetarracas.
-**/nsfw pussy** Es temporada de recogida de higos.
-**/nsfw boobjob** Tetas tetarracas + * clk clk clk *
-**/nsfw gangbang** Muchas tuneladoras para un sólo túnel.
-"""
+
+
 MATEMATICAS = """
-**/mates contar** - Cuenta desde un número *a* hasta un número *b*.
-**/mates calc** - Calcula expresiones matemáticas varias.
-**/mates par** - Comprueba si un número es par o no.
-**/mates primo** - Comprueba si un número es primo o no.
-**/mates grafseno** - Grafica una función seno.
-**/mates grafcoseno** - Grafica una función coseno.
-**/mates grafrecta** - Grafica una función lineal.
-**/mates grafparabola** - Grafica una función cuadrática.
-**/mates grafcircunferencia** - Grafica una circunferencia.
-**/mates graflog** - Grafica una función logarítmica.
-**/mates grafexp** - Grafica una función exponencial.
-"""
-MUSICA = """
-**/musica play** - Reproduce una canción.
-**/musica pause** - Pausa la reproducción.
-**/musica resume** - Reanuda la reproducción.
-**/musica skip** - Salta a la siguiente canción.
-**/musica seek** - Avanza hacia delante o atrás en la canción.
-**/musica join** - Conecta al bot al canal de voz.
-**/musica leave** - Desconecta al bot al canal de voz.
-**/musica volume** - Establece el volumen del bot.
-**/musica loop** - Activa/Desactiva el bucle.
-**/musica queue** - Mira la cola.
-**/musica now** - Muestra lo que se está reproduciendo ahora mismo.
-**/musica stop** - Para la canción.
-"""
-VERIFICACION = """
-**/verification verify** - Verifica tu cuenta.
-"""
-HELP = """
-**/help all** - Muestra este mensaje.
+<b>MATEMÁTICAS</b>
+**/calcular <operacion>** - Calcula expresiones matemáticas varias.
+**/par <numero>** - Comprueba si un número es par o no.
+**/primo <numero>** - Comprueba si un número es primo o no.
+**/seno <a> <k>** - Grafica una función seno.
+**/coseno <a> <k>** - Grafica una función coseno.
+**/recta <m> <n>** - Grafica una función lineal.
+**/parabola <a> <b> <c>** - Grafica una función cuadrática.
+**/circunferencia <r>** - Grafica una circunferencia.
+**/log <a> <b>** - Grafica una función logarítmica.
+**/exp <a> <b>** - Grafica una función exponencial.
 """

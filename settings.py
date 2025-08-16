@@ -22,7 +22,7 @@ GRAPH_PATH = "data/images/graph.png" # ruta para guardar gráficos
 
 # Cofiguración de parámetros del comando /help
 VARIOS = """
-<b>MISCELÁNEA</b>
+**MISCELÁNEA**
 **/ping** - Ping de Pype.
 **/info** - Info del discord.
 **/say <cosa>** - Pype dice algo.
@@ -36,7 +36,7 @@ VARIOS = """
 """
 
 INTERACCION = """
-<b>INTERACCIÓN</b>
+**INTERACCIÓN**
 **/waifu** - Te da una waifu aleatoria en GIF.
 **/neko** - Te da un neko aleatorio en GIF.
 **/shinobu** - Te da un GIF de Shinobu.
@@ -78,15 +78,15 @@ INTERACCION = """
 
 
 MATEMATICAS = """
-<b>MATEMÁTICAS</b>
+**MATEMÁTICAS**
 **/calcular <operacion>** - Calcula expresiones matemáticas varias.
 **/par <numero>** - Comprueba si un número es par o no.
 **/primo <numero>** - Comprueba si un número es primo o no.
 **/seno <a> <k>** - Grafica una función seno.
 **/coseno <a> <k>** - Grafica una función coseno.
 **/recta <m> <n>** - Grafica una función lineal.
-**/parabola <a> <b> <c>** - Grafica una función cuadrática.
+**/parabola <a> ** <c>** - Grafica una función cuadrática.
 **/circunferencia <r>** - Grafica una circunferencia.
-**/log <a> <b>** - Grafica una función logarítmica.
-**/exp <a> <b>** - Grafica una función exponencial.
+**/log <a> **** - Grafica una función logarítmica.
+**/exp <a> **** - Grafica una función exponencial.
 """

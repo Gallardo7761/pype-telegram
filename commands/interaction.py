@@ -435,14 +435,6 @@ class Interaction:
 
     @delete_user_message
     async def dance(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-        if not context.args:
-            await update.effective_chat.send_message(
-                text=f"Debes especificar un usuario"
-            )
-            return
-        
-        
-        user = context.args[0]
         url = self.anime.sfw("dance")
         await update.effective_chat.send_animation(
             animation=url,
@@ -459,11 +451,14 @@ class Interaction:
         
         
         user = context.args[0]
-        url = self.anime.sfw("cringe")
-        await update.effective_chat.send_animation(
-            animation=url,
-            caption=f"{update.effective_sender.first_name} le ha dado cringe lo que ha dicho {user}"
-        )
+        caption=f"{update.effective_sender.first_name} le ha dado cringe lo que ha dicho {user}"
+        with open("data/images/interaction/cringe.gif", "rb") as gif:
+            await update.effective_chat.send_animation(
+                animation=gif,
+                caption=caption,
+                disable_notification=True
+            )
+    
     
     @delete_user_message
     async def run(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:

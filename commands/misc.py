@@ -136,7 +136,7 @@ Resultado: {choice(("Cara 😀", "Cruz ❌"))}
     @delete_user_message
     async def drink(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         drinks = ["cerveza", "vino", "whisky", "ron", "vodka", "tequila", "ginebra", "sidra", "champán", "cava", "sake", "absenta", "brandy", "licor", "vermut", "mezcal", "pacharán", "anís", "aguardiente", "coñac", "cóctel", "cubata", "cóctel", "cubalibre"]
-        with open("data/images/interaction/beber.gif") as gif:
+        with open("data/images/interaction/beber.gif", "rb") as gif:
             await update.effective_chat.send_animation(
                 animation=gif,
                 caption=f"@{update.effective_sender.username} ha bebido {choice(drinks)}",

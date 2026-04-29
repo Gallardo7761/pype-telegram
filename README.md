@@ -1,3 +1,1 @@
-# pype-telegram
-
-Multi-purpose telegram bot made with python-telegram-bot Telegram API wrapper 
+Half testing half serious bot for my friends-only telegram group
